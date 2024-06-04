@@ -367,7 +367,7 @@ def obter_perfilcompleto(cpf: str, senha: str, certificado: str):
 
  
 if __name__ == '__main__':
-    main()
+    uvicorn.run(app, host="0.0.0.0", port=80)
    
     #save_cert(cert1, 'cert.p12')
 
